@@ -146,11 +146,6 @@ function App() {
         var fourth = taskList?.fourthSection.filter((item, i) => item.title.includes(SearchText))
         value["fourthSection"] = fourth
       }
-      //  var second = taskList?.secondSection.filter((item , i) =>item.title.includes(SearchText))
-      //  var third = taskList?.thirdSection.filter((item , i) =>item.title.includes(SearchText))
-      //  var fourth = taskList?.fourthSection.filter((item , i) =>item.title.includes(SearchText))
-      //  value = {...first , ...second , ...third , ...fourth}
-      console.log("gdfgdgdfg", value);
       setsearchList({ ...value })
     }
   }
@@ -216,7 +211,6 @@ function App() {
           </Grid>
         </Grid>
       </div>
-      {console.log(searchList, "taskListtaskList")}
       <Modal
         open={open}
         onClose={handleClose}
