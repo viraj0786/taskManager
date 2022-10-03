@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AppSection {
+  padding: 40px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  position: relative;
+}
+
+.search svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.taskBx {
+  margin-top: 20px;
+  background: #e9e9e9;
+  padding: 15px;
+
+}
+
+.taskBx>h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.taskBxInner {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.taskBxInner h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  color: red;
+  cursor: pointer;
+}
+
+.arrowBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.arrowBtns button *{pointer-events: none;}
+
+.arrowBtns button {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
 }
